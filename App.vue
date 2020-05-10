@@ -1,5 +1,7 @@
 <script>
+	
 	export default {
+		
 		onLaunch: function() {
 			console.log('App Launch')
 		},
@@ -8,7 +10,10 @@
 		},
 		onHide: function() {
 			console.log('App Hide')
-		}
+		},
+		methods: {
+			      
+			}
 	}
 </script>
 
