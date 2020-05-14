@@ -6,6 +6,7 @@
 		<input v-model="password"/>
 		<button @tap="go">一键登录</button>
 		<view v-if="html" v-html="html"></view>
+		<image :src="vcPic"></image>
 	</view>
 </template>
 
@@ -27,6 +28,9 @@
 		computed:{
 			html(){
 				return this.$store.state.demoST.html
+			},
+			vcPic(){
+				return this.$store.state.demoST.vcPic
 			}
 		},
 		methods: {
