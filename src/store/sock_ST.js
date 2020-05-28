@@ -6,7 +6,7 @@ export default {
 	},
 	mutations: {
 		init(state, data){
-			const wsuri = "ws://127.0.0.1:3000";
+			const wsuri = "ws://127.0.0.1:3000/wx";
 			let that = this
 			state.websock = new WebSocket(wsuri);
 			state.websock.onmessage = function(e){
