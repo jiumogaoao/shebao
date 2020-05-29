@@ -7,7 +7,7 @@
 
       <input ref="upload" type="file" name="file" id="file" value="" multiple="multiple" @change='upload'/>
 
-		<button @tap="go">一键登录</button>
+		<button @click="go">一键登录</button>
 		<div v-if="html" v-html="html"></div>
 		<image :src="vcPic"></image>
 	</div>
@@ -46,7 +46,7 @@ export default {
         })
 
       },
-			go(){
+			go(){debugger;
 				this.$store.dispatch("sockST/websocketsend",{action:"login",data:{user:this.user,password:this.password}})
 				// uni.request({
 				// 		url: 'http://localhost:3000', //仅为示例，并非真实接口地址。
